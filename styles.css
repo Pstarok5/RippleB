@@ -1,0 +1,52 @@
+body {
+    background-color: grey;
+}
+
+
+h1 {
+    color: red;
+    font-size: 40px;
+    font-family: Centaur;
+}
+
+
+
+button {
+    padding: 28px;
+    position: relative;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    background-color: green;
+    border: 10px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+button::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: lime;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-top: -200%;
+    margin-left: -200px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+
+
+
+button:active::after {
+    margin: 0;
+    padding: 0;
+    transition: 0s;
+    opacity: 1;
+}
